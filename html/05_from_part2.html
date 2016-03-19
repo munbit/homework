@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Part 2</title>
+       <style type="text/css">
+           .main{
+               border: solid 1px gray;
+               padding: 10px;
+               width:800px;
+           }
+           fieldset{
+               border: solid 10px yellow;
+               background-color: lightyellow;
+               margin-bottom:10px;
+               width:720px;
+               display: block;
+           }
+           textarea{
+               width:360px;
+               height:50px;
+           }
+           label{
+               width:180px;
+               padding-right:5px;
+           }
+           
+           range{text-align: center;}
+           
+           .range-low{
+               border: solid 2px #990000;
+               background-color: #990000;
+               padding:2px;
+               color:white;
+            }
+           .range-high{
+               border: solid 2px #80007f;
+               background-color: #80007f;
+               padding:2px;
+               color:white;
+           }
+        </style>
+    </head>
+	<body>
+       <div class="main">
+            <h1>Please Enter Your Detail For Our Website !</h1>
+            <form method="post">
+              <fieldset>
+                <legend>Your General Details</legend> 
+                 <p>
+                  <label for="name">Name:</label>
+                   <input type="text" name="name" id="name" required />
+                 </p>
+                 <p>
+                    <label for="gender">Gender:</label>
+                            <input type="radio" name="gender" id="gender" />Male
+                            <input type="radio" name="gender" id=gender/>Female
+                 </p>
+                    <p>
+                        <label for="age">Age:</label>
+                         <input type="number" name="age" id="age" required />
+                    </p>
+                    <p>
+                       <label for="date">Date of birth:</label>
+                        <input type="date" id="date" name="date" />
+                    </p>
+                    <p><label for="fav_color">Favorite color:</label><input type="color" id="fav_color" name="fav_color"></p>
+                    <p>
+                               <label for="country">Which country:</label>
+                                <select name="country" id="country">
+                                    <option value="">Please Select</option>
+                                    <option value="Thai1">Thai 1</option>
+                                    <option value="Thai2">Thai 2</option>
+                                    <option value="Thai3">Thai 3</option>
+                                    <option value="Thai4">Thai 4</option>
+                                </select>
+                     </p>
+              </fieldset>
+                <fieldset>
+                <legend>Your Indicators</legend> 
+                  <p>
+                      <label for="height">Height:</label>
+                        <span class="range-low">Short</span><input type="range" name="height" id="height"/>
+                        <span class="range-high">Tall</span>
+                    </p>
+                    <p>
+                    <label for="salary">Salary:</label>
+                     <span class="range-low">Poor</span><input type="range" name="salary" id="salary" /><span class="range-high">Rich</span>
+                     </p>
+              </fieldset> 
+                <fieldset>
+                <legend>Your Contact Information</legend> 
+                 <p><label for="email">Email:</label>
+                    <input type="email" name="email" id="email" />
+                </p>
+                <p>
+                    <label for="mobile">Mobile:</label><input type="tel" name="mobile"  id="mobile"/>
+                </p>
+                <p>
+                    <label for="address">Address:</label>
+                     <textarea cols="50" rows="3" name="address" id="address"></textarea>
+                </p>
+                    <p>
+                        <label for="contact">Modthod to contact you:</label>
+                        <input type="checkbox" name="contact" id="contact" />Email
+                        <input type="checkbox" name="contact"
+                        id="contact" />Whatsapp
+                        <input type="checkbox" name="contact"
+                        id="contact" />In-app chat
+                </p>    
+              </fieldset>
+            <p><input type="submit" /></p>
+            </form>
+        </div>
+    </body>
+</html>
