@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Part 1</title>
+</head>
+<body>
+<fieldset>
+<form>
+<h1>Please Enter Your Detials for our Website!</h1>
+	<fieldset>
+	<legend>Your Gereral Details</legend>
+	Name :
+	<input type="text">
+	<br>
+	Gender : 
+	<input type="radio" name="gender" value="male" checked> Male
+  	<input type="radio" name="gender" value="female"> Female	
+  	Age :
+	<input type="text">	
+	<br>
+	Date of birth :
+	<input type="date">
+	<br>
+	Favorite color:
+	<input type="color">
+	<br>
+	Which country:
+	<select name="country" id="country">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+	</fieldset>	
+
+	<fieldset>
+		 <legend>Your Indicators</legend> 
+                  <p>
+                      <label for="height">Height:</label>
+                        <span class="range-low">Short</span><input type="range" name="height" id="height"/>
+                        <span class="range-high">Tall</span>
+                    </p>
+                    <p>
+                    <label for="salary">Salary:</label>
+                     <span class="range-low">Poor</span><input type="range" name="salary" id="salary" /><span class="range-high">Rich</span>
+                     </p>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Your Contact Infprmation</legend>
+		Email:
+		<input type="email">
+		<br>
+		Mobile:
+		<input type="tel">
+		<br>
+		Address :
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+		<br>
+		Modthod to caontact you :
+		<input type="checkbox">Email
+		<input type="checkbox">Whatsapp
+		<input type="checkbox">In-app chat
+	</fieldset>
+
+<input type="submit">
+
+	
+</form>
+</fieldset>
+</body>
+</html>
